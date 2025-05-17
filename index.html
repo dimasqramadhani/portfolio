@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.jpg" alt="Dimasqi Ramadhani" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Dimasqi Ramadhani">Dimasqi Ramadhani</h1>
+          <p class="title">Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">dimasqiramadhani@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">+6282254331579</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">28 November 2001</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bontang, Kalimantan Timur, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/dimasqiramadhani/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/dimasqramadhani" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            Saya adalah seorang Web Developer dan UI/UX Enthusiast asal Indonesia. Saya memiliki ketertarikan dalam menyederhanakan masalah yang kompleks menjadi solusi digital yang intuitif, menarik, dan mudah digunakan.
+          </p>
+          <p>
+            Saya percaya bahwa sebuah website yang baik bukan hanya berfungsi dengan lancar, tapi juga mampu memberikan pengalaman pengguna yang menyenangkan. Karena itu, saya selalu berusaha menghadirkan desain yang fungsional sekaligus estetik, dengan sentuhan personal agar tampil berbeda.
+          </p>
+          <p>
+            Tujuan saya adalah membantu brand atau bisnis menyampaikan pesan dan identitas mereka secara efektif melalui pendekatan desain yang kreatif dan bermakna. Saya telah mengerjakan berbagai proyek desain web, baik untuk portofolio pribadi maupun brand yang sedang berkembang.
+          </p>
+        </section>
+        <!--
+          - service
+        -->
+        <section class="service">
+          <h3 class="h3 service-title">Expertise</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX</h4>
+                <p class="service-item-text">
+                  Mendesain web modern, responsif, dan user-friendly dengan fokus pada visual dan pengalaman pengguna.
+                </p>                
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Membangun website fungsional dan efisien dengan teknologi modern untuk berbagai skala.
+                </p>                
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Interaction Design</h4>
+                <p class="service-item-text">
+                  Mendesain interaksi pengguna dengan antarmuka digital, sangat penting untuk user experience.
+                </p>                
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Information Architect</h4>
+                <p class="service-item-text">
+                  Merancang struktur informasi dan navigasi agar situs mudah dipahami dan digunakan.
+                </p>                
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Universitas Merdeka Malang</h4>
+              <span>2020 — 2024</span>
+              <p class="timeline-text">
+                Sarjana Sistem Informasi dengan fokus pada web design, front-end, dan UI/UX. Berpengalaman menggunakan HTML, CSS, JavaScript, serta prinsip desain antarmuka untuk menciptakan solusi digital yang menarik dan user-friendly.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SMA Negeri 1 Bontang Utara</h4>
+              <span>2017 — 2020</span>
+              <p class="timeline-text">
+                Mempelajari dasar-dasar sains dan matematika seperti fisika, kimia, dan biologi yang memperkuat kemampuan analitis, logika, dan pemecahan masalah sebagai fondasi untuk studi lanjutan di bidang teknologi dan data.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Magenta PAC X 2024 PT Pupuk Kalimantan Timur</h4>
+              <span>2024 — 2025</span>
+              <p class="timeline-text">
+                Magang di Pupuk Kaltim dengan fokus pada desain custom dashboard Wazuh dan ELK Stack untuk monitoring dan visualisasi data keamanan sistem secara efektif.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Pengabdian Masyarakat</h4>
+              <span>2023 — 2024</span>
+              <p class="timeline-text">
+                Saya merancang desain landing page UMKM Djamoesoedirdjo yang menarik dan mudah digunakan untuk memperkuat brand serta memudahkan pengunjung mengenal produk dan layanan.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Komunitas Web Developer</h4>
+              <span>2021 — 2022</span>
+              <p class="timeline-text">
+                Selama pendidikan, saya aktif di komunitas pengembang web dengan fokus pada web design dan front-end, menggunakan HTML, CSS, JavaScript, dan React untuk membuat tampilan web yang menarik dan responsif.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <!--
+          - Skills
+        -->
+        <section class="skills">
+          <h3 class="h3 skills-title">Skills</h3>
+          <div class="slider-container">
+            <div class="slider-track">
+              <!-- Asli -->
+              <ul class="skills-list">
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/html.svg" alt="HTML"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/css.svg" alt="CSS"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/tailwind.svg" alt="Tailwind"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/sass.svg" alt="SASS"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/js.svg" alt="JavaScript"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/next.svg" alt="Next"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/restapi.svg" alt="Rest"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/vue.svg" alt="Vue"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/react.svg" alt="React"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/vite.svg" alt="Vite"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/webpack.svg" alt="Webpack"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/svelte.svg" alt="Svelte"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/netlify.svg" alt="Netlify"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/figma.svg" alt="Figma"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/git.svg" alt="Git"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/github.svg" alt="Github"></div></li>                
+              </ul>
+              <!-- Duplikat -->
+              <ul class="skills-list">
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/html.svg" alt="HTML"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/css.svg" alt="CSS"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/tailwind.svg" alt="Tailwind"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/sass.svg" alt="SASS"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/js.svg" alt="JavaScript"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/next.svg" alt="Next"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/restapi.svg" alt="Rest"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/vue.svg" alt="Vue"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/react.svg" alt="React"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/vite.svg" alt="Vite"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/webpack.svg" alt="Webpack"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/svelte.svg" alt="Svelte"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/netlify.svg" alt="Netlify"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/figma.svg" alt="Figma"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/git.svg" alt="Git"></div></li>
+                <li class="skills-item"><div class="skills-icon-box"><img src="./assets/images/github.svg" alt="Github"></div></li>                
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!--
+          - Courses
+        -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Courses</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-name="Dicoding Indonesia" data-date="2023-01-15">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/modal-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dicoding Indonesia</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mengikuti program pelatihan Frontend Web Development melalui platform Dicoding Indonesia yang berfokus pada penguasaan dasar-dasar pengembangan antarmuka pengguna. Pelatihan ini mencakup HTML, CSS, dan JavaScript, serta framework populer seperti React.js untuk membangun aplikasi web interaktif dan responsif. Selain itu, materi juga meliputi pengelolaan state, routing, dan praktik terbaik dalam pengembangan frontend modern.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-name="ITBOX" data-date="2024-12-15">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/modal-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>ITBOX</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mengikuti pelatihan UI/UX di ITBOX yang mencakup pemahaman mendalam tentang desain antarmuka, pengalaman pengguna, wireframing, prototyping, dan usability testing. Pelatihan ini juga melatih penggunaan alat-alat desain seperti Figma dan Adobe XD, serta memperkuat keterampilan dalam menciptakan desain yang intuitif, estetis, dan sesuai kebutuhan pengguna.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/modal-3.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Indonesia AI</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mengikuti program bootcamp yang diselenggarakan oleh Indonesia AI dengan fokus pada pengembangan dan penerapan teknologi Computer Vision. Pelatihan ini mencakup pemrosesan citra digital, deteksi objek, segmentasi gambar, serta implementasi model deep learning untuk pengenalan visual. Selain itu, peserta dibekali dengan keterampilan penggunaan pustaka dan framework seperti OpenCV, TensorFlow, dan Keras untuk membangun solusi berbasis visi komputer yang aplikatif dan inovatif.
+                  </p>
+                </div>
+              </div>
+            </li> -->
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item data-name="Dicoding Indonesia" data-date="2025-3-10">
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/modal-4.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Coursera</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Mengikuti program pelatihan di Coursera dengan fokus pada web design dan pengembangan front-end. Pelatihan ini mencakup konsep dasar desain antarmuka, responsive design, HTML, CSS, JavaScript, serta framework populer seperti React. Selain teori, pelatihan memberikan keterampilan praktis dalam membangun tampilan web yang menarik, fungsional, dan user-friendly.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title></h4>
+              <time data-modal-date></time>
+              <div data-modal-text>
+                <p></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!--
+        - #PORTFOLIO
+      -->
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="filter-item">
+              <button data-filter-btn>Web Design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Finance</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Orizon</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://dashboard-ui-eta-eight.vercel.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Dashboard UI</h3>
+                <p class="project-category">Web Design</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+                <h3 class="project-title">Brawlhalla</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="project-title">DSM.</h3>
+                <p class="project-category">Web Design</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">MetaSpark</h3>
+                <p class="project-category">Web Design</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">Summary</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+                <h3 class="project-title">Task Manager</h3>
+                <p class="project-category">Applications</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">Arrival</h3>
+                <p class="project-category">web Development</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2292.534900890225!2d117.48274193103245!3d0.13443852008768145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1747400665347!5m2!1sid!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
