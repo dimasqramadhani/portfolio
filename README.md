@@ -29,10 +29,6 @@ git clone https://github.com/username/nama-repo.git
 ```bash
 /
 ├── index.html
-├── about.html
-├── resume.html
-├── portfolio.html
-├── contact.html
 ├── assets/
 │   ├── css/
 │   ├── js/
