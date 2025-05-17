@@ -2,6 +2,18 @@
 
 Website portofolio pribadi yang responsif, dibuat menggunakan HTML, CSS, dan JavaScript.
 
+## Struktur Folder
+
+```bash
+/
+├── index.html
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+└── README.md
+```
+
 ## Fitur
 
 - Desain responsif untuk berbagai ukuran layar (desktop, tablet, mobile)
@@ -23,15 +35,3 @@ git clone https://github.com/username/nama-repo.git
 
 3. Buka folder hasil clone.
 4. Jalankan file index.html di browser atau gunakan ekstensi Live Server di VS Code.
-
-## Struktur Folder
-
-```bash
-/
-├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-└── README.md
-```
