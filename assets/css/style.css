@@ -1171,7 +1171,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: 10px;
   }
 
-  .sidebar.active { max-height: 100%; }
+  .sidebar.active { max-height: 650px; }
 
   .project-img,
   .blog-banner-box { height: auto; }
